@@ -20,7 +20,7 @@ function App() {
                     setIsLoading(true);
                     setError(false);
 
-                    const response = await fetch('https://jsonplaceholder.typicode.com/tods');
+                    const response = await fetch('https://jsonplaceholder.typicode.com/todos');
 
                     if (!response.ok) {
                         throw new Error('Ошибка при получении данных');
